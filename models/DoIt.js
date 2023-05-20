@@ -1,6 +1,7 @@
+require('../config/connection');
 const mongoose = require('mongoose');
 
-const DoItSchema = new.mongoose.Schema({
+const DoItSchema = new mongoose.Schema({
 
     do: {
         type:mongoose.Schema.Types.ObjectId,
@@ -8,3 +9,7 @@ const DoItSchema = new.mongoose.Schema({
         unique: false
     }
 })
+
+const DoIt = mongoose.model('DoIt', DoItSchema);
+
+module.exports = DoIt;
