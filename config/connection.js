@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 // This is my actual string in the .env file coming in
-const connectionString = process.env.MONGO_DB_URI;
+const connectionString = process.env.MONGODB_URI;
 // console.log(connectionString);
 
 // This connects mongoDB to Mongoose to provide rules for the models
