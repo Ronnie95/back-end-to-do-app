@@ -4,9 +4,9 @@ const mongoose = require('mongoose');
 const DoItSchema = new mongoose.Schema({
 
     do: {
-        type:String,
-        required: [true, "it has to be something"],
-        unique: false
+        type: String,
+        //required: [true, "it has to be something"],
+        //unique: false
     }
 })
 
